@@ -24,3 +24,40 @@ NodeJS project
   
   > Listagem de elogios por usuário
   
+# Estrutura do banco de dados
+
+- User
+> (Primary-Key) ID (uuid)
+
+> name (varchar)
+
+> email (varchar)
+
+> password (varchar)
+
+> admin (boolean)
+
+> created_at (Date)
+
+> updated_at (Date)
+
+- Tag (descrição dos elogios)
+> (Primary-Key) ID (uuid)
+
+> name (varchar)
+
+> created_at (Date)
+
+> updated_at (Date)
+
+- Compliments
+> (Primary-Key) ID (uuid)
+
+> (Foreign-Keys) user_sender (uuid)
+
+> (Foreign-Keys) user_receiver (uuid)
+
+> (Foreign-Keys) tag_id (uuid)
+
+> created_at (Date)
+
