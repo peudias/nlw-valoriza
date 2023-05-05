@@ -59,5 +59,7 @@ NodeJS project
 
 > (Foreign-Keys) tag_id (uuid)
 
+> message (varchar)
+
 > created_at (Date)
 
