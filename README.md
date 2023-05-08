@@ -26,7 +26,7 @@ NodeJS project
   
 # Estrutura do banco de dados
 
-- User
+- users
 > (Primary-Key) ID (uuid)
 
 > name (varchar)
@@ -41,7 +41,7 @@ NodeJS project
 
 > updated_at (Date)
 
-- Tag (descrição dos elogios)
+- tags (descrição dos elogios)
 > (Primary-Key) ID (uuid)
 
 > name (varchar)
@@ -50,7 +50,7 @@ NodeJS project
 
 > updated_at (Date)
 
-- Compliments
+- compliments
 > (Primary-Key) ID (uuid)
 
 > (Foreign-Keys) user_sender (uuid)
